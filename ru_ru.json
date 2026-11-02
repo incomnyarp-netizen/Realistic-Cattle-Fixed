@@ -1,0 +1,20 @@
+{
+  "entity.realisticcattle.cattle": "Крупный рогатый скот",
+  "item.realisticcattle.husbandry_guide": "Книга животновода",
+  "item.realisticcattle.cattle_spawn_egg": "Яйцо призыва: голштинская корова",
+  "item.realisticcattle.pedigree_book": "Книга родословной",
+  "jade.realisticcattle.cattle_info": "Племенная информация",
+  "item.realisticcattle.holstein_spawn_egg": "Яйцо призыва: голштинская порода",
+  "item.realisticcattle.jersey_spawn_egg": "Яйцо призыва: джерсейская порода",
+  "item.realisticcattle.brown_swiss_spawn_egg": "Яйцо призыва: бурая швицкая порода",
+  "item.realisticcattle.highland_spawn_egg": "Яйцо призыва: хайленд",
+  "item.realisticcattle.aberdeen_angus_spawn_egg": "Яйцо призыва: абердин-ангус",
+  "item.realisticcattle.hereford_spawn_egg": "Яйцо призыва: герефорд",
+  "item.realisticcattle.charolais_spawn_egg": "Яйцо призыва: шароле",
+  "item.realisticcattle.simmental_spawn_egg": "Яйцо призыва: симментал",
+  "item.realisticcattle.limousin_spawn_egg": "Яйцо призыва: лимузин",
+  "item.realisticcattle.belgian_blue_spawn_egg": "Яйцо призыва: бельгийская голубая",
+  "item.realisticcattle.mineral_supplement": "Минеральная подкормка",
+  "item.realisticcattle.dairy_feed": "Молочный комбикорм",
+  "item.realisticcattle.calf_milk_bottle": "Бутылочка молока для телят"
+}

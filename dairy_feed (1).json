@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["WWW", "BSC", "WWW"],
+  "key": {
+    "W": { "item": "minecraft:wheat" },
+    "B": { "item": "minecraft:beetroot" },
+    "S": { "item": "minecraft:wheat_seeds" },
+    "C": { "item": "minecraft:carrot" }
+  },
+  "result": { "item": "realisticcattle:dairy_feed", "count": 4 }
+}

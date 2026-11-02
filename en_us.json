@@ -1,0 +1,20 @@
+{
+  "entity.realisticcattle.cattle": "Cattle",
+  "item.realisticcattle.husbandry_guide": "Husbandry Guide",
+  "item.realisticcattle.cattle_spawn_egg": "Holstein Cattle Spawn Egg",
+  "item.realisticcattle.pedigree_book": "Pedigree Book",
+  "jade.realisticcattle.cattle_info": "Breeding information",
+  "item.realisticcattle.holstein_spawn_egg": "Holstein Spawn Egg",
+  "item.realisticcattle.jersey_spawn_egg": "Jersey Spawn Egg",
+  "item.realisticcattle.brown_swiss_spawn_egg": "Brown Swiss Spawn Egg",
+  "item.realisticcattle.highland_spawn_egg": "Highland Spawn Egg",
+  "item.realisticcattle.aberdeen_angus_spawn_egg": "Aberdeen Angus Spawn Egg",
+  "item.realisticcattle.hereford_spawn_egg": "Hereford Spawn Egg",
+  "item.realisticcattle.charolais_spawn_egg": "Charolais Spawn Egg",
+  "item.realisticcattle.simmental_spawn_egg": "Simmental Spawn Egg",
+  "item.realisticcattle.limousin_spawn_egg": "Limousin Spawn Egg",
+  "item.realisticcattle.belgian_blue_spawn_egg": "Belgian Blue Spawn Egg",
+  "item.realisticcattle.mineral_supplement": "Mineral Supplement",
+  "item.realisticcattle.dairy_feed": "Dairy Feed",
+  "item.realisticcattle.calf_milk_bottle": "Calf Milk Bottle"
+}

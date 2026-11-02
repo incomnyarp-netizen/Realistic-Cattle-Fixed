@@ -1,0 +1,35 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="All Rights Reserved"
+[[mods]]
+modId="realisticcattle"
+version="0.6.0-alpha"
+displayName="Realistic Cattle"
+authors="YourName"
+description='''Realistic cattle breeds, needs, genetics and husbandry. Early development build.'''
+[[dependencies.realisticcattle]]
+modId="forge"
+mandatory=true
+versionRange="[47,)"
+ordering="NONE"
+side="BOTH"
+[[dependencies.realisticcattle]]
+modId="minecraft"
+mandatory=true
+versionRange="[1.20.1,1.20.2)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.realisticcattle]]
+modId="geckolib"
+mandatory=true
+versionRange="[4.4.9,)"
+ordering="AFTER"
+side="BOTH"
+
+[[dependencies.realisticcattle]]
+modId="jade"
+mandatory=false
+versionRange="[11.12.3,)"
+ordering="AFTER"
+side="BOTH"

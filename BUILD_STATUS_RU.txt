@@ -1,0 +1,11 @@
+Realistic Cattle — исправленный исходный проект
+
+Исправления по ошибкам компиляции:
+- Jade: IPluginConfig перенесён в snownee.jade.api.config; регистрация entity-компонента выполняется в registerClient.
+- Генетика: методы, работающие со случайностью Minecraft, используют RandomSource вместо java.util.Random.
+- Spawn egg: используется RandomSource из Level.
+- Forge SimpleChannel: обработчик пакета принимает Supplier<NetworkEvent.Context>.
+- CattleBreedComposition: устранено повторное имя переменной в lambda.
+
+Важно: этот архив содержит исправленный ИСХОДНЫЙ КОД. Сборка Gradle в этой среде не запускалась, поэтому успешная компиляция и запуск в игре пока НЕ подтверждены.
+Для проверки загрузите содержимое архива в GitHub-репозиторий и запустите GitHub Actions.
