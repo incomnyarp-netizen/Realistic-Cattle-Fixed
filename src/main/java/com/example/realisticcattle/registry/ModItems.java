@@ -45,7 +45,7 @@ public final class ModItems {
 
 private static RegistryObject<Item> egg(String id, int background, int spots, CattleBreed breed) {
     return ITEMS.register(id, () -> new CattleBreedSpawnEggItem(
-            ModEntities.CATTLE.get(), background, spots, new Item.Properties(), breed));
+            ModEntities.CATTLE, background, spots, new Item.Properties(), breed));
 }
 
     private ModItems() {}
