@@ -11,7 +11,7 @@ import net.minecraft.sounds.SoundSource;
 import net.minecraft.stats.Stats;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.SpawnEggItem;
+import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.entity.MobSpawnType;
 import net.minecraft.world.level.Level;
@@ -22,14 +22,15 @@ import net.minecraft.nbt.CompoundTag;
 import net.minecraft.util.RandomSource;
 
 /** Breed-specific egg. All eggs create the same cattle entity but initialize its breed and founder genetics. */
-public class CattleBreedSpawnEggItem extends SpawnEggItem {
+public class CattleBreedSpawnEggItem extends ForgeSpawnEggItem {
     private final CattleBreed breed;
 
-    public CattleBreedSpawnEggItem(EntityType<? extends Mob> type, int background, int spots,
-                                   Properties properties, CattleBreed breed) {
-        super(type, background, spots, properties);
-        this.breed = breed;
-    }
+   public CattleBreedSpawnEggItem(java.util.function.Supplier<? extends EntityType<? extends Mob>> type,
+                               int background, int spots,
+                               Properties properties, CattleBreed breed) {
+    super(type, background, spots, properties);
+    this.breed = breed;
+}
 
     @Override
     public InteractionResult useOn(UseOnContext context) {
