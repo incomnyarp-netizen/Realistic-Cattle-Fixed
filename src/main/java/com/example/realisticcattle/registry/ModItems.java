@@ -1,3 +1,4 @@
+
 package com.example.realisticcattle.registry;
 
 import com.example.realisticcattle.RealisticCattle;
@@ -5,23 +6,23 @@ import com.example.realisticcattle.genetics.CattleBreed;
 import com.example.realisticcattle.item.CattleBreedSpawnEggItem;
 import com.example.realisticcattle.item.PedigreeBookItem;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.SpawnEggItem;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
 public final class ModItems {
-    public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, RealisticCattle.MOD_ID);
+    public static final DeferredRegister<Item> ITEMS =
+            DeferredRegister.create(ForgeRegistries.ITEMS, RealisticCattle.MOD_ID);
 
     public static final RegistryObject<Item> HUSBANDRY_GUIDE = ITEMS.register("husbandry_guide",
             () -> new Item(new Item.Properties().stacksTo(1)));
+
     public static final RegistryObject<Item> PEDIGREE_BOOK = ITEMS.register("pedigree_book",
             () -> new PedigreeBookItem(new Item.Properties().stacksTo(1)));
-    // Kept registered for worlds created with the earlier generic egg ID.
-    public static final RegistryObject<Item> CATTLE_SPAWN_EGG = ITEMS.register("cattle_spawn_egg",
-            () -> new CattleBreedSpawnEggItem(ModEntities.CATTLE.get(), 0x171714, 0xE8E3D6, new Item.Properties(), CattleBreed.HOLSTEIN));
 
-    // One egg per registered breed. Egg colors are deliberately distinct in the vanilla spawn-egg style.
+    public static final RegistryObject<Item> CATTLE_SPAWN_EGG = egg(
+            "cattle_spawn_egg", 0x171714, 0xE8E3D6, CattleBreed.HOLSTEIN);
+
     public static final RegistryObject<Item> HOLSTEIN_SPAWN_EGG = egg("holstein_spawn_egg", 0x282724, 0xF1EEE5, CattleBreed.HOLSTEIN);
     public static final RegistryObject<Item> JERSEY_SPAWN_EGG = egg("jersey_spawn_egg", 0xA86B3C, 0xE9C18A, CattleBreed.JERSEY);
     public static final RegistryObject<Item> BROWN_SWISS_SPAWN_EGG = egg("brown_swiss_spawn_egg", 0x67452F, 0xB58A62, CattleBreed.BROWN_SWISS);
@@ -35,14 +36,16 @@ public final class ModItems {
 
     public static final RegistryObject<Item> MINERAL_SUPPLEMENT = ITEMS.register("mineral_supplement",
             () -> new Item(new Item.Properties().stacksTo(16)));
+
     public static final RegistryObject<Item> DAIRY_FEED = ITEMS.register("dairy_feed",
             () -> new Item(new Item.Properties().stacksTo(32)));
+
     public static final RegistryObject<Item> CALF_MILK_BOTTLE = ITEMS.register("calf_milk_bottle",
             () -> new Item(new Item.Properties().stacksTo(16)));
 
     private static RegistryObject<Item> egg(String id, int background, int spots, CattleBreed breed) {
         return ITEMS.register(id, () -> new CattleBreedSpawnEggItem(
-                ModEntities.CATTLE.get(), background, spots, new Item.Properties(), breed));
+                ModEntities.CATTLE, background, spots, new Item.Properties(), breed));
     }
 
     private ModItems() {}
