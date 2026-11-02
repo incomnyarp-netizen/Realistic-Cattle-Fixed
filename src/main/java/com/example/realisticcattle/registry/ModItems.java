@@ -43,10 +43,10 @@ public final class ModItems {
     public static final RegistryObject<Item> CALF_MILK_BOTTLE = ITEMS.register("calf_milk_bottle",
             () -> new Item(new Item.Properties().stacksTo(16)));
 
-    private static RegistryObject<Item> egg(String id, int background, int spots, CattleBreed breed) {
-        return ITEMS.register(id, () -> new CattleBreedSpawnEggItem(
-                ModEntities.CATTLE, background, spots, new Item.Properties(), breed));
-    }
+private static RegistryObject<Item> egg(String id, int background, int spots, CattleBreed breed) {
+    return ITEMS.register(id, () -> new CattleBreedSpawnEggItem(
+            ModEntities.CATTLE.get(), background, spots, new Item.Properties(), breed));
+}
 
     private ModItems() {}
 }
